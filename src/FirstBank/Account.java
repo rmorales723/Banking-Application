@@ -10,14 +10,14 @@ public class Account {
 	
 	//Class constructor
     Account(String cname, String cid){
-		customerName = cname;
-		customerId = cid;
+		    customerName = cname;
+		    customerId = cid;
 	}
 	
 	//Function for depositing money
 	void deposit(int amount) {
 		if (amount != 0) {
-			balance = balance + amount;
+		    balance = balance + amount;
 			prevTransaction = amount;
 		}
 	}
