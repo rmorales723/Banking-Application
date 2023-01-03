@@ -21,4 +21,12 @@ public class Account {
 			prevTransaction = amount;
 		}
 	}
+
+    //Function for withdrawing money
+	void withdraw(int amount) {
+		if (amount != 0) {
+			balance = balance - amount;
+			prevTransaction = -amount;
+		}
+	}
 }
