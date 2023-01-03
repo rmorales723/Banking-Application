@@ -32,6 +32,17 @@ public class Account {
 		}
 	}
 
+    //Function showing the previous transaction
+	void getPrevTransaction() {
+		if (prevTransaction > 0) {
+			System.out.println("Deposited: " + prevTransaction);
+		} else if (prevTransaction < 0) {
+			System.out.println("Withdrawn: " + Math.abs(prevTransaction));
+		} else {
+			System.out.println("No transaction occurred");
+		}
+	}
+
     //Function calculating interest of current funds after a number of years
 	void calculateInterest(int years) {
 		double interestRate = .0185;
@@ -113,4 +124,4 @@ public class Account {
 	
 		
     }
-}
+
